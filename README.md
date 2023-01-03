@@ -1,4 +1,4 @@
-# Go-CodeGen —— Go语言实现的到吗生成器
+# Go-CodeGen —— Go语言实现的代码生成器
 作者：千石（掘金社区主页：https://juejin.cn/user/3843548383816862）
 ## 引言
 本项目参加掘金社区举办的[码上掘金迎新年后端赛](https://juejin.cn/challenge/3)
