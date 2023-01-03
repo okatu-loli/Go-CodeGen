@@ -1,0 +1,30 @@
+{{define "template"}}
+package {{.PackageName}}
+
+// {{.Name}} 是实现Generator接口的结构体
+type {{.Name}} struct {
+    {{range .Fields -}}{{.Name}} {{.Type}}  // {{.Description}}
+    {{end}}
+}
+
+{{range .Funcs}}
+// {{.Name}} 是一个函数
+func {{.Name}}() {
+    fmt.Println("调用函数 {{.Name}}.")
+}
+{{end}}
+
+{{range .Methods}}
+// {{.Name}} 是 {{.Receiver}} 的方法
+func ({{.Receiver}} *{{.Name}}) {{.Name}}() {
+    fmt.Println("Called method {{.Name}} on {{.Receiver}}.")
+}
+{{end}}
+
+{{range .Structs}}
+type {{.Name}} struct {
+    {{range .Fields}}{{.Name}} {{.Type}}  // {{.Description}}
+    {{end}}
+}
+{{end}}
+{{end}}

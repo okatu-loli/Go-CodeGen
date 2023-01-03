@@ -1,0 +1,14 @@
+{
+  "fields": [
+    {
+      "Name": "ID",
+      "Type": "int",
+      "Description": "ID is the unique identifier of the object"
+    },
+    {
+      "Name": "Name",
+      "Type": "string",
+      "Description": "Name is the name of the object"
+    }
+  ]
+}
